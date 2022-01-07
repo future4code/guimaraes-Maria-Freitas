@@ -1,0 +1,43 @@
+h2{
+    text-align: center;
+    font-family: monospace;
+    color:rgb(228, 222, 222);
+    font-size: 300%; 
+    
+    
+ }
+
+div{
+   
+   font-family: monospace;
+   text-align: center;
+   font-size: 15px;
+
+   }
+
+img { 
+    width: 150px;
+    height: 150px;
+    top: 10 ;
+
+    
+}
+
+button {
+ color:rgb(32, 32, 32)
+
+
+}
+
+h4 {
+   font-family: Arial, Helvetica, sans-serif;
+   color:rgb(228, 222, 222);
+   font-size: 100%
+    
+}
+
+ul{
+   font-family: monospace;
+   font-size: 15px;
+   
+}
