@@ -68,44 +68,7 @@ function imprimeTresCoresFavoritas() {
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   
- return(string .toUpperCase())
 
- const nome = string .toUpperCase()
- return nome
-
-}
-
-// EXERCÍCIO 07
-function calculaIngressosEspetaculo(custo, valorIngresso) {
-  
-  return (custo / valorIngresso)
-  const custoEspetaculo = custo / valorIngresso
-
-}
-
-// EXERCÍCIO 08
-function checaStringsMesmoTamanho(string1, string2) {
-  
-  return string1.length === string2.length
-
-}
-
-// EXERCÍCIO 09
-function retornaPrimeiroElemento(array) {
-  // implemente sua lógica aqui
-
-  return array [0]
-
-}
-
-// EXERCÍCIO 10
-function retornaUltimoElemento(array) {
-
- return array [array.length - 1]
-
-}
-
-// EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array, primeiraPosicao) {
   // implemente sua lógica aqui
 
@@ -114,13 +77,12 @@ function trocaPrimeiroEUltimo(array, primeiraPosicao) {
   array[array.legth -1] = primeiraPosicao
   return array
 
+
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
-
-  return string1 .toUpperCase() === string2 .toUpperCase()
 
 
 }
@@ -143,4 +105,3 @@ function checaValidadeInscricaoLabenu() {
 
 }
 
-//fiz o meu melhor
