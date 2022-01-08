@@ -68,46 +68,22 @@ function imprimeTresCoresFavoritas() {
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   
- return(string .toUpperCase())
 
-
-}
-
-// EXERCÍCIO 07
-function calculaIngressosEspetaculo(custo, valorIngresso) {
-  
-  return (custo / valorIngresso)
-
-}
-
-// EXERCÍCIO 08
-function checaStringsMesmoTamanho(string1, string2) {
-  
-  return (string1 , string2)
-
-}
-
-// EXERCÍCIO 09
-function retornaPrimeiroElemento(array) {
+function trocaPrimeiroEUltimo(array, primeiraPosicao) {
   // implemente sua lógica aqui
 
-}
+  primeiraPosicao =array[0]
+  array[0]= array[array.length -1]
+  array[array.legth -1] = primeiraPosicao
+  return array
 
-// EXERCÍCIO 10
-function retornaUltimoElemento(array) {
-  // implemente sua lógica aqui
-
-}
-
-// EXERCÍCIO 11
-function trocaPrimeiroEUltimo(array) {
-  // implemente sua lógica aqui
 
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
+
 
 }
 
@@ -129,4 +105,3 @@ function checaValidadeInscricaoLabenu() {
 
 }
 
-//preciso melhorar!
