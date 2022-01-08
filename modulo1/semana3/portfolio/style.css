@@ -1,7 +1,7 @@
 h2{
-    text-align: center;
+    text-align: left;
     font-family: monospace;
-    color:rgb(228, 222, 222);
+    color:rgb(204, 197, 197);
     font-size: 300%; 
     
     
@@ -10,15 +10,20 @@ h2{
 div{
    
    font-family: monospace;
-   text-align: center;
+   text-align: left;
    font-size: 15px;
+  
+   
 
    }
 
 img { 
-    width: 150px;
-    height: 150px;
-    top: 10 ;
+   position: absolute; 
+   top: 0px; 
+   right:0px;
+   width: 350px;
+   height: 350px;
+   border:4px solid rgb(13, 81, 158);
 
     
 }
@@ -29,9 +34,9 @@ button {
 
 }
 
-h4 {
+h4, h3 {
    font-family: Arial, Helvetica, sans-serif;
-   color:rgb(228, 222, 222);
+   color:rgb(204, 197, 197);
    font-size: 100%
     
 }
@@ -41,3 +46,10 @@ ul{
    font-size: 15px;
    
 }
+
+.botoes {
+   margin:0%;
+   padding:0%;
+   
+}
+
