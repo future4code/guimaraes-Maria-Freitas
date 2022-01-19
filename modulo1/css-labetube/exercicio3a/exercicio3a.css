@@ -45,27 +45,32 @@ footer {
 
 .imagem-1 {
  display: grid;
- flex-direction: column;
+ flex-direction: row;
  justify-content: space-around;
  align-items: left;
- box-shadow: 2px 2px 5px rgb(88, 65, 65);
+ 
  text-align: left;
+ width: vh;
+ margin-top: 10px;
 
 }
 
 .imagem-2 {
- display: grid;
- flex-direction: column;
+ display: flex;
+ flex-direction: row;
  justify-content: space-around;
- align-items: left;
- box-shadow: 2px 2px 5px rgb(88, 65, 65);
- text-align: left;
+ align-items: center;
+ 
+ text-align: center;
+ width: 10px;
+ margin-top: 10px;
+
 }
 
 .imagem-3 {
- display: grid;
- flex-direction: column;
- justify-content: space-between;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
  align-items: left;
  box-shadow: 2px 2px 5px rgb(88, 65, 65);
  text-align: left;
@@ -73,9 +78,9 @@ footer {
 
 
 .imagem-4 {
-    display: grid;
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: left;
     box-shadow: 2px 2px 5px rgb(88, 65, 65);
     text-align: left;
@@ -83,9 +88,9 @@ footer {
 
 
 .imagem-5 {
-    display: grid;
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: left;
     box-shadow: 2px 2px 5px  rgb(88, 65, 65);
     text-align: left;
@@ -93,17 +98,17 @@ footer {
 
 
 .imagem-6 {
-    display: grid;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: left;
-    box-shadow: 2px 2px 5px  rgb(88, 65, 65);
+    box-shadow: 2px 2px 5px  rgb(141, 73, 73);
     text-align: left;
 }
 
 
 .imagem-7 {
-    display: grid;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
@@ -113,10 +118,11 @@ footer {
 
 
 .imagem-8 {
-    display: grid;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
     box-shadow: 2px 2px 5px  rgb(88, 65, 65);
     text-align: left;
+
 }
