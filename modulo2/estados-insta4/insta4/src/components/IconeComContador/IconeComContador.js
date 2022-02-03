@@ -22,3 +22,4 @@ export function IconeComContador(props) {
 
 // exportando a função camelcase colocando a props como parâmetro 
 //retornando a variável criada como display flex passando no alt o ícone, mostrando no src o caminho e dando o onclick
+// Revendo a aula para o exercício de hoje 03/02
