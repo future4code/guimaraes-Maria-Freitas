@@ -4,22 +4,44 @@ import styled from 'styled-components'
 const IconContainer = styled.div`
 	display: flex;
 `
-//Temos uma varíavel camelcase estilizando uma div e colocando o display flex - dois blocos lado à lado
-
 
 const IconImage = styled.img`
 	margin-right: 5px;
 `
 
-// variaável camelcase estilizando uma imagem, 5 px margem direita
+class IconeComContador extends React.Component {
+ state = {
+  IconeContainer: 0
 
-export function IconeComContador(props) {
-	return <IconContainer>
-		<IconImage alt={'Icone'} src={props.icone} onClick={props.onClickIcone}/>
-		<p>{props.valorContador}</p>
-	</IconContainer>
+ }
+
+
+onClickCurtida = () => {
+const valorAtual =this.state.IconeComContador
+
+
 }
 
-// exportando a função camelcase colocando a props como parâmetro 
-//retornando a variável criada como display flex passando no alt o ícone, mostrando no src o caminho e dando o onclick
-// Revendo a aula para o exercício de hoje 03/02
+
+
+ render () {
+   return (
+    <div>
+     
+
+
+	</div>
+
+ )
+
+
+
+ }
+
+
+
+
+
+
+
+}

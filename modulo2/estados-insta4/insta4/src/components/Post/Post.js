@@ -5,7 +5,6 @@ import styled from 'styled-components'
 //Import style-components, CSS
 
 import {IconeComContador} from '../IconeComContador/IconeComContador'
-
 import iconeCoracaoBranco from '../../img/favorite-white.svg'
 import iconeCoracaoPreto from '../../img/favorite.svg'
 import iconeComentario from '../../img/comment_icon.svg'
@@ -47,6 +46,8 @@ const UserPhoto = styled.img`
 const PostPhoto = styled.img`
   width: 100%;
 `
+
+
 // Aula de ontem. Comandos para inputs, onclick
 
 //Exercício n° 6
@@ -79,7 +80,7 @@ class Post extends React.Component {
 
   aoEnviarComentario = () => {
     this.setState({
-      comentando: false,
+      comentando: true,
       numeroComentarios: this.state.numeroComentarios + 1
     })
   }
