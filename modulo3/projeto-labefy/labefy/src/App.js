@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import axios from 'axios';
 import React from 'react';
+import adicionarMusicas from './Components/adicionarMusicas';
 
 const Header =styled.header `
  background-color: #8B4726;
@@ -17,14 +18,35 @@ const Background = styled.div`
   min-height: 100%;
   background-color: #CDAA7D;
   position: absolute;
+  /* display:grid; */
   display: flex;
   color: white;
-  display: flex;
-  flex-direction: column;
   font-size: 20px;
-      
-`
+
+div {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  row-gap: 20px;
+  column-gap: 20px;
+  margin: 10px;
+  
+}
+
+button {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+input {
+height: 20px;
+width: 180px;
+
+}
+
  
+`
+
 
 class App extends React.Component {
 state ={
@@ -70,6 +92,7 @@ createPlaylist = () => {
     }
   }).then ((response)=> {
    console.log (response.data) 
+   alert ("Playlist criada com sucesso")
 
   }).catch ((error) => {
     console.log (error.response.data)
@@ -87,6 +110,7 @@ deletePlaylist = (idDaPlaylist) => {
   }).then((response) => {
     this.getAllPlaylists ()
     console.log (response)
+    alert("Playlist deletada")
   }).catch ((error) => 
     console.log (error.response))
 
@@ -107,25 +131,24 @@ deletePlaylist = (idDaPlaylist) => {
    return (
 
  <div>
+      
       <Header> 
         <p>Labefy</p>
       </Header>
 
     <Background>
-      <criacaoPlaylist> 
+     <div>
         <p>Crie sua Playlist</p>
           <input placeholder="Diga aí sua playlist" value ={this.state.inputCriar} 
           onChange= {this.manuseioDoInput}/>
           <button onClick={this.createPlaylist}>adicionar</button>
-     </criacaoPlaylist> 
-
-      <playlistCriada>
+        
           <p>Lista de Playlists</p>
             {renderizaPlaylists}
-      </playlistCriada>
 
-      <p></p>
-
+          <p>Suas músicas</p>
+          {/* {adicionarMusicas} */}
+      </div>
    </Background>
      
            
