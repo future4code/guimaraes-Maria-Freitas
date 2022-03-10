@@ -3,61 +3,28 @@ import axios from 'axios';
 import React from 'react';
 
 const Header =styled.header `
- background-color: #39752D;
+ background-color: #8B4726;
  display: flex;
  justify-content: center;
  color: white;
- font-size: 30px;
+ font-size: 40px;
  margin: 0px;
  
+ `
 
+const Background = styled.div`
+  width: 100%;
+  min-height: 100%;
+  background-color: #CDAA7D;
+  position: absolute;
+  display: flex;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+      
 `
-const Layout = styled.div`
-display: flex;
-flex-direction: column;
-width: 100vw;
-background-color:#BDD5B8;
-
-
-criacaoPlaylist {
- display: flex; 
- flex-direction: column;
- align-items: center;
- width:200px;
- background-color:#82C175;
- color: white;
- margin: 100px;
- padding: 50px;
- font-size: 25px;
- font-family:Arial;
- font-style:italic;
-}
-
-button {
-  margin: 15px;
-  padding:10px;
-  font-size: 15px;
-  font-weight: bold;  
-}
-
-
-
-playlistCriada { 
-display: flex; 
-width:150px;
-height: 400px;
-background-color:#82C175;
-color: white;
-margin: 500px;
-padding: 80px;
-margin-top: 0px;
-font-family:Arial;
-font-style:italic;
-font-size: 20px;
-}
-
-`
-
+ 
 
 class App extends React.Component {
 state ={
@@ -140,28 +107,28 @@ deletePlaylist = (idDaPlaylist) => {
    return (
 
  <div>
-   <Layout>
-
       <Header> 
         <p>Labefy</p>
       </Header>
-      
+
+    <Background>
       <criacaoPlaylist> 
-        <p><u>Crie sua Playlist</u></p>
+        <p>Crie sua Playlist</p>
           <input placeholder="Diga aí sua playlist" value ={this.state.inputCriar} 
           onChange= {this.manuseioDoInput}/>
           <button onClick={this.createPlaylist}>adicionar</button>
-      </criacaoPlaylist> 
-      
+     </criacaoPlaylist> 
+
       <playlistCriada>
-        <p><u>Lista de Playlists</u></p>
-          {renderizaPlaylists}
+          <p>Lista de Playlists</p>
+            {renderizaPlaylists}
       </playlistCriada>
 
+      <p></p>
 
-      <p>Adicionar música</p>
-
-   </Layout>
+   </Background>
+     
+           
  </div>
 
 
