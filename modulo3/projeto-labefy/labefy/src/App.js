@@ -18,34 +18,83 @@ const Background = styled.div`
   min-height: 100%;
   background-color: #CDAA7D;
   position: absolute;
-  /* display:grid; */
   display: flex;
   color: white;
   font-size: 20px;
+  height: 300px;
 
-div {
-  display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
-  row-gap: 20px;
-  column-gap: 20px;
-  margin: 10px;
-  
-}
 
-button {
-  /* display: flex;
+div:nth-child(1) {
+  display: flex;
+  margin: 50px;
   flex-direction: column;
-  justify-content: space-between; */
-}
+  background-color:#8B4726;
+  height: 200px;
+  justify-content: center;
+
 
 input {
-height: 20px;
-width: 180px;
+  margin: 15px;
+  margin-top: 0px;
+}
+
+button{
+ width:70px;
+ align-self: center;
+}
+
+p {
+ align-self:center;
 
 }
 
+}
+
+div:nth-child(2){
+  display: flex;
+  margin: 50px;
+  width: 250px;
+  flex-direction: column;
+  background-color:#8B4726;
+  /* height: 100px; */
+  
+p{
+  align-self:center;
+}
+
+
+} 
+
+
+div:nth-child(3) {
+  display: flex;
+  margin: 50px;
+  flex-direction: column;
+  background-color:#8B4726;
+  height: 300px;
+  justify-content: center;
+  width: 300px;
+
+}
  
+p {
+  align-self:center;
+  height: 10px;
+
+}
+
+
+
 `
+
+const ListaMusica= styled.div `
+ color: white;
+ width:10px;
+
+`
+
+
+
 
 
 class App extends React.Component {
@@ -54,6 +103,12 @@ playlists: [],
 inputCriar: "" 
 
 }
+
+componentDidUpdate () {
+ this.getAllPlaylists ()
+
+}
+
 
 componentDidMount () {
  this.getAllPlaylists ()
@@ -119,10 +174,10 @@ deletePlaylist = (idDaPlaylist) => {
   render() {
    const renderizaPlaylists = this.state.playlists.map((playlist) => {
    return ( 
-    <div>
+    <ListaMusica>
       <p key ={playlist.id} > {playlist.name}</p>
       <button onClick={() => this.deletePlaylist(playlist.id)}>excluir playlist</button>
-    </div>
+    </ListaMusica>
    )
 
    })
@@ -137,18 +192,24 @@ deletePlaylist = (idDaPlaylist) => {
       </Header>
 
     <Background>
+
      <div>
         <p>Crie sua Playlist</p>
           <input placeholder="Diga aí sua playlist" value ={this.state.inputCriar} 
           onChange= {this.manuseioDoInput}/>
           <button onClick={this.createPlaylist}>adicionar</button>
-        
+      </div> 
+
+        <div>
           <p>Lista de Playlists</p>
             {renderizaPlaylists}
+        </div>
 
+      <div>
           <p>Suas músicas</p>
           {/* {adicionarMusicas} */}
       </div>
+
    </Background>
      
            
