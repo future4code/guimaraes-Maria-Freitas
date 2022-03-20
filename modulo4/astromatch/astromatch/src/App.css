@@ -1,0 +1,30 @@
+* {
+  margin: 15px;
+  padding:0px;
+  background-color: rgb(209, 210, 212);
+
+}
+
+header {
+ border: 1px solid black;
+ height:500px;
+ width:300px;
+ margin:auto;
+ background-color: aliceblue;
+ /* display:flex; */
+
+ 
+}
+
+h3{
+ width: 0px;
+ margin-left: 90px;
+ 
+}
+
+button {
+margin: 5px;
+padding: 5px;
+display: flex;
+justify-items: center;
+}
