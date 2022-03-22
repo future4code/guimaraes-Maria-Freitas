@@ -1,8 +1,8 @@
 import React from "react"
-import { TelaPrincipal } from "./Components/TelaPrincipal";
-import { TelaMatch } from "./Components/TelaMatch";
-import './App.css';
+import { TelaPrincipal } from "./Components/TelaPrincipal/TelaPrincipal";
+import {TelaMatch} from "./Components/TelaMatch/TelaMatch";
 import axios from "axios";
+import styled from 'styled-components'
 
 
 
@@ -10,12 +10,14 @@ import axios from "axios";
 
 export default function App() {
   return (
-    <div className="App">
-    <TelaPrincipal/>
-   
-    
-   
-    </div>
+    <div>
+        {/* <TelaPrincipal/>
+      <TelaMatch/> */}
+  
+      <h3>Astromatch</h3>
+      <button>match</button> 
+      
+   </div>
   );
 }
 
