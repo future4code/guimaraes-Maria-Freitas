@@ -9,13 +9,10 @@ import styled from 'styled-components'
 
 
 export default function App() {
+
   return (
     <div>
-        {/* <TelaPrincipal/>
-      <TelaMatch/> */}
-  
-      <h3>Astromatch</h3>
-      <button>match</button> 
+     <TelaPrincipal/>
       
    </div>
   );
