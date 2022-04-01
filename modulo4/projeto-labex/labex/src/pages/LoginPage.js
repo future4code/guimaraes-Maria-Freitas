@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom'
 const LoginPage = () => {
     const navigate = useNavigate ()
 
-    const goToLoginPage = () => {
-     navigate ('/admin')
+    const goToLoginPage= () => {
+     navigate ('/login')
 
 
 
