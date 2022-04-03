@@ -11,6 +11,7 @@ const TripDetailsPage = () => {
 
   <div>
      <h1>Detalhes da viagem - área administrativa</h1>
+     
 
   </div>  
 
