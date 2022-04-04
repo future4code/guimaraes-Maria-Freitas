@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import { ContainerList} from '../Styled'
 import axios from 'axios'
 
 
@@ -29,14 +30,11 @@ const ListTripsPage = () => {
   }
 
  return (
- <div>  
-     <h1>LISTA</h1>
+ <ContainerList>
+   <h1>Lista das diversas viagens - area pública</h1>
     <button onClick={goToListTripsPage}>Ir para Home</button>
     <button onClick={goToApplicationFormPage}>Inscreva</button>
-    
-    
-</div>    
-  
+ </ContainerList>    
  
  )
 

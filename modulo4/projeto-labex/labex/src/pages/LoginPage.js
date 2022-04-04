@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import { ContainerLogin } from '../Styled'
 
 
 const LoginPage = () => {
@@ -7,24 +8,24 @@ const LoginPage = () => {
 
    
 
-    const goToAdminHomePage= () => {
+    const goToAdminHomePage = () => {
      navigate ('/admin')
+    }
 
-// essa página não está aparecendo os inputs e o botão - ir para a página do administrador
 
  return (
-  <div>
+  <ContainerLogin>
+
     <h1>Login Administrador</h1>
     <input placeholder='email'/>
     <input placeholder='nome'/>
     <button onClick={goToAdminHomePage}>LOGGIN</button>
-    
-    
-  </div>  
+     
+  </ContainerLogin>  
  )
 
 
-}
+
 
 }
 export default LoginPage

@@ -1,5 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import { ContainerBotao, ContainerPai} from '../Styled'
+
+
 
 
 const HomePage = () => {
@@ -15,11 +18,16 @@ const HomePage = () => {
 
   }
  return (
- <div>
-  <h1>Home da Página</h1>
-  <button onClick={goToHomePage}>Ir para lista</button>
-  <button onClick={goToLoginPage}>Login administrador</button>
- </div>    
+
+ <ContainerPai>
+  <h1><u>Home da Página</u></h1>
+
+   <ContainerBotao>
+    <button onClick={goToHomePage}>Ir para lista</button>
+    <button onClick={goToLoginPage}>Login administrador</button>
+   </ContainerBotao> 
+  
+ </ContainerPai>    
   
 
  )

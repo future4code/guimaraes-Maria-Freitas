@@ -7,15 +7,31 @@ const AdminHomePage = () => {
 
     const goToTripDetailsPage= () => {
      navigate ('/trip')
+    }
 
-// Essa página precisa no botão ir para página de detalhes das viagens e não está indo.
+     const goLoginPage = () => {
+      navigate (-1)
+
+     }
+
+
+// Essa página privada o administrador precisa ver os detalhes das viagens, deletadas.
+// nessa parte temos a API GETGet Trip Detail, DEL Delete Trip
+//botão de excluir precisa funcionar
+//
+
+
+
+
 
  return (
 
  <div>
-   <h1>Lista de viagens - área privada</h1>
+   <h1>Lista de viagens - área privada - vejo as listas de viagens</h1>
    <button>excluir viagens</button>
-   <button onClick={goToTripDetailsPage}button/>
+   <button onClick={goToTripDetailsPage}>Acessar as listas</button>
+   <button onClick={goLoginPage}>voltar</button>
+  
  </div>
    
 
@@ -23,6 +39,6 @@ const AdminHomePage = () => {
 
  } 
 
-}
+
 
 export default AdminHomePage
