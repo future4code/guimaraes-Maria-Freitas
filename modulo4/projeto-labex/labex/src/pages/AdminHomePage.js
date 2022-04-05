@@ -16,7 +16,7 @@ const AdminHomePage = () => {
 
 
 // Essa página privada o administrador precisa ver os detalhes das viagens, deletadas.
-// nessa parte temos a API GETGet Trip Detail, DEL Delete Trip
+// nessa parte temos a API Get Trip Detail, DEL Delete Trip
 //botão de excluir precisa funcionar
 //
 
