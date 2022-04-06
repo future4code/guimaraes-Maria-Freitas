@@ -1,43 +1,57 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import {ContainerList} from '../Styled'
+import { ContainerList } from '../Styled'
 import axios from 'axios'
 
 
+
 const ListTripsPage = () => {
- const navigate = useNavigate ()
+  const navigate = useNavigate()
 
-    const goToListTripsPage = () => {
-     navigate ('/')
+  useEffect(() => {
+    axios.get('https://us-central1-labenu-apis.cloudfunctions.net/labeX/maria-freitas-turmaGuimaraes/trips')
+      .then((resp) => { console.log("Deu certo", resp) })
+      .catch((err) => { console.log("Deu errado", err) })
+ })
 
- }
 
-  const goToApplicationFormPage =() => {
-    navigate ('/aplication')
-
-  const getTrips = () => {
-   axios.get ('https://us-central1-labenu-apis.cloudfunctions.net/labeX/:aluno/trips')
-   
-  }
-
-// nessa parte, preciso renderizar a lista de viagens para o usuário (público)
-// no vídeo do Darvas, ele cria um botão para renderização, mas aqui ao sair do HOME, já precisa ir para página seguinte com as listas.
-// como fazer aparecer essa listagem sem precisar criar um botão? apenas aparecer na página? 
-// Se eu colocar a requisição no corpo, ele vai renderizar várias vezes num looping, atualizando e renderizando.
-// criar um alert toda vez que enviar as informações do formulário.
-// para renderizar na tela, cria um state, usa do then e cath? 
+  const goToListTripsPage = () => {
+    navigate('/')
 
   }
 
- return (
- <ContainerList>
-   <h1>Lista das diversas viagens - area pública</h1>
-    <button onClick={goToListTripsPage}>Ir para Home</button>
-    <button onClick={goToApplicationFormPage}>Inscreva</button>
- </ContainerList>    
- 
- )
+  const goToApplicationFormPage = () => {
+    navigate('/aplication')
 
- }
+
+
+    // const getTrips = () => {
+    //  axios.get ('https://us-central1-labenu-apis.cloudfunctions.net/labeX/maria-freitas-turmaGuimaraes/trips')
+    //  .then((resp)=> {console.log("Deu certo",resp)})
+    //  .catch((err) =>{console.log("Deu errado",err)})
+    // }
+
+
+
+
+    // nessa parte, preciso renderizar a lista de viagens para o usuário (público)
+    // no vídeo do Darvas, ele cria um botão para renderização, mas aqui ao sair do HOME, já precisa ir para página seguinte com as listas.
+    // como fazer aparecer essa listagem sem precisar criar um botão? apenas aparecer na página? 
+    // Se eu colocar a requisição no corpo, ele vai renderizar várias vezes num looping, atualizando e renderizando.
+    // criar um alert toda vez que enviar as informações do formulário.
+    // para renderizar na tela, cria um state, usa do then e cath? 
+
+  }
+
+  return (
+    <ContainerList>
+      <h1>Lista das diversas viagens - area pública</h1>
+      <button onClick={goToListTripsPage}>Ir para Home</button>
+      <button onClick={goToApplicationFormPage}>Inscreva</button>
+    </ContainerList>
+
+  )
+
+}
 
 export default ListTripsPage
