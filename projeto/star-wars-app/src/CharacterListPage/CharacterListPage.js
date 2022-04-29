@@ -10,10 +10,12 @@ import { BASE_URL } from "../constants/urls"
 // Criei um estado vazio para guardar as informações passadas.
 // criei uma pasta onde guardei a URL, importante e entre chaves chamando a API principal e /people o que a primeiro momento precisaria.
 
-const [characterList, setCharacterList] =useState([])
 
 const CharacterListPage= () => {
 const navigate = useNavigate ()
+
+const [characterList, setCharacterList] =useState([])
+
 
 const goToDetailPage= () => {
   navigate ('/CharacterDetailPage')
@@ -26,28 +28,31 @@ const goToDetailPage= () => {
   },[])
   
 
-
   const getCharacterList= () => {
      axios.get(`${BASE_URL}/people`)
-    .then ((res) => console.log (res))
+    .then ((res) => setCharacterList(res.data.results))
     .catch((err) => console.log (err.response)) 
   
   }
 
-  const listPage = () => {
-   setCharacterList (setCharacterList)
+  const listPeople= characterList.map((persona)=> {
+    return (
 
-  }
+       <div>
+         <p>{persona.name}</p> 
+       </div>
 
-  
+    )
+   }
+  ) 
+    
 
   return (
     <div>
-      <h1>Lista Page Star Wars</h1>
+      <p>Lista Page Star Wars</p>
       <button onClick ={goToDetailPage}>Ir para Detalhes</button>
-      {characterList}
-      {listPage}
-    </div>
+      {listPeople}  
+      </div>
   )
 }
 
