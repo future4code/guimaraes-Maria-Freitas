@@ -2,7 +2,7 @@ import React, {useEffect,useState} from "react"
 import axios from "axios"
 import {useNavigate} from 'react-router-dom'
 import { BASE_URL } from "../constants/urls"
-
+import { CharacterCard, ContainerCard} from "./style"
 // Descrevendo: Importei os comandos que precisava
 // Axios para as API's
 // useEffect para ao renderizar o código, meu uruário tem as informações na tela
@@ -16,14 +16,15 @@ const navigate = useNavigate ()
 
 const [characterList, setCharacterList] =useState([])
 
-
 const goToDetailPage= () => {
   navigate ('/CharacterDetailPage')
+  
  }
    
   
   useEffect (()=> {
     getCharacterList ()
+  
   
   },[])
   
@@ -35,25 +36,25 @@ const goToDetailPage= () => {
   
   }
 
-  const listPeople= characterList.map((persona)=> {
-    return (
+  const listPeople= characterList.map((persona,index)=> {
+    return <CharacterCard key={index}>{persona.name} </CharacterCard>
 
-       <div>
-         <p>{persona.name}</p> 
-       </div>
 
-    )
-   }
-  ) 
     
-
+  })
+    
   return (
-    <div>
-      <p>Lista Page Star Wars</p>
-      <button onClick ={goToDetailPage}>Ir para Detalhes</button>
-      {listPeople}  
-      </div>
+   
+      <CharacterCard>
+          <h3>Lista de Personagens Star Wars</h3>
+          <button onClick ={goToDetailPage}>Detalhes</button>
+         <p>{listPeople} </p>
+      </CharacterCard>
+  
   )
+      
 }
 
 export default CharacterListPage;
+
+//perguntar: por que ao ir na página do meu navegador ele demora para renderizar a lista de personagens?
