@@ -9,7 +9,7 @@ const Router =() => {
     <BrowserRouter>
         <Routes>
           <Route index element={<CharacterListPage/>}/>
-          <Route path="/detail/:i" element ={<CharacterDetailPage/>}/>         
+          <Route path='/detail/:i' element ={<CharacterDetailPage/>}/>         
        </Routes>
     </BrowserRouter>
     

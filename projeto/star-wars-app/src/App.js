@@ -1,5 +1,4 @@
 import React from "react";
-// import { BASE_URL } from "../constants/urls"
 import Router from "./routes/Router";
 
 

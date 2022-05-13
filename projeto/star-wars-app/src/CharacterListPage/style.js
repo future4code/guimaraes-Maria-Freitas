@@ -1,31 +1,35 @@
 import styled from "styled-components";
+import fundo from '../assets/../img/img.jpg'
 
-export const CharacterCard = styled.div`
-display:flex;
-flex-direction:column;
-background-color:#5D478B;
-left: 50vh;
-    
+
+
+export const Fundo = styled.div `
+  background-image: url(${fundo});
+  width: 100%;
+  min-height: 100vh;
+
+`
+
+export const CardHeader = styled.div `
+display: flex;
+justify-content: center;
+
+
 
 h3{
-  color: #AB82FF;
-  font-size: 40px;
-  align-self: center;
-  font-family: 'Courier New', Courier, monospace;
-
+  text-shadow:  0 3px #EEC900;
+  color:white;
+  font-size: 50px;
 
 }
 
-button {
-margin: 40px;
-padding: 50px;
-border-color: #AB82FF;
 
-
-}
-
- `
- 
+`
+export const CardList =styled.div `
+display: flex;
+color: white;
+border: 3px solid white;
 
 
 
+`
