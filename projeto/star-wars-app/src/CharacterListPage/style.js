@@ -2,11 +2,10 @@ import styled from "styled-components";
 import fundo from '../assets/../img/img.jpg'
 
 
-
 export const Fundo = styled.div `
   background-image: url(${fundo});
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 
 `
 
@@ -15,11 +14,11 @@ display: flex;
 justify-content: center;
 
 
-
 h3{
-  text-shadow:  0 3px #EEC900;
+  text-shadow:  0 4px #EEC900;
   color:white;
-  font-size: 50px;
+  font-size: 60px;
+  padding: 50px;
 
 }
 
@@ -27,9 +26,20 @@ h3{
 `
 export const CardList =styled.div `
 display: flex;
+flex-wrap: wrap;
+padding: 10px;
 color: white;
-border: 3px solid white;
+justify-content: center;
 
 
+p{
+  
+  margin: 15px;
+  width: 200px;
+  height:20px;
+  font-size:18px;
+
+
+}
 
 `

@@ -3,8 +3,7 @@ import React, { useEffect, useState} from "react"
 import { BASE_URL } from "../constants/urls"
 import { useParams } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
-
-
+import {Container} from "./style"
 
 
 const CharacterDetailPage= () => {
@@ -20,20 +19,14 @@ useEffect (() => {
 
 }, [])
 
-
-
 const getDetail= () => {
  axios.get(`${BASE_URL}/people/${params.i}`)
   .then((res) => {
     setDetails(res.data)
-    
-  })
-
+ })
   .catch((err)=> {console.log (err)})
 
-  
 }
-
 
 
 const goToList= () => {
@@ -50,24 +43,23 @@ console.log (response)
  
 }
 
-console.log (planet)
-
  return (
 
-    <div>
-      <h1>Detalhes Star Wars Página</h1>
+    <Container>
+      <h1>Detalhes Personagens Star Wars </h1>
+      <p>Nome:{details.name}</p>
       <p>Altura:{details.height}</p>
       <p>Cor dos olhos:{details.eye_color}</p>
       <p>Cor do cabelo:{details.hair_color}</p>
       <p>Cor da pele:{details.skin_color}</p>
       <p>Data de nascimento:{details.birth_year}</p>
       <button onClick={goToList}>Voltar</button>
+     
  
-    </div>
-
+    </Container>
+   
   )
 
   }
-
 
 export default CharacterDetailPage;

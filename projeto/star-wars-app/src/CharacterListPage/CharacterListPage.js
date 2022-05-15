@@ -32,6 +32,8 @@ const navigate = useNavigate ()
 
   const listPeople= characterList.map((persona,i)=> {
    return <div onClick={()=>goToDetailPage(i+1)}>
+     <img src={`https://starwars-visualguide.com/assets/img/characters/${i+1}.jpg`}
+      width='140px' height='180px'/>
      <p key={i}> {persona.name}</p>
    </div>
 
@@ -44,12 +46,13 @@ const navigate = useNavigate ()
     <Fundo>
         <CardHeader>
           <h3>Star Wars</h3> 
-        </CardHeader>
+       </CardHeader>
 
-        <CardList>
-        {listPeople} 
-        </CardList>   
-           
+      <CardList>
+       {listPeople} 
+      </CardList>  
+       
+   
     </Fundo>
      
   )
