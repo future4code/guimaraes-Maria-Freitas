@@ -22,6 +22,12 @@ h3{
 
 }
 
+h4{
+  color: white;
+  margin: 30px;
+
+}
+
 
 `
 export const CardList =styled.div `
@@ -38,8 +44,15 @@ p{
   width: 200px;
   height:20px;
   font-size:18px;
-
-
 }
+
+button{
+width: 100px;
+border-radius: 10px;
+border:white;
+padding: 10px;
+height: 50px;
+}
+
 
 `

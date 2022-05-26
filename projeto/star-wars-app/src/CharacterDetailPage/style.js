@@ -11,7 +11,11 @@ background-color:black;
 height: 657px;
 background-image: url(${fundo});
 
+img{
+height: 300px;
+width: 200px;
 
+}
 
 button{
 width: 80px;
@@ -25,8 +29,6 @@ p{
   margin: 25px;
   font-size: 20px;
  
-
-
 }
 
 h1{
@@ -36,5 +38,10 @@ h1{
   padding: 30px;
 }
 
+
+`
+export const Imagem= styled.div `
+display: flex;
+flex-direction: end;
 
 `

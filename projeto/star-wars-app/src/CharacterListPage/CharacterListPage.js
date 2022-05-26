@@ -30,6 +30,11 @@ const navigate = useNavigate ()
 
   }
 
+  const goToDetailPlanet= () =>
+  navigate (`/planet/`)
+
+
+
   const listPeople= characterList.map((persona,i)=> {
    return <div onClick={()=>goToDetailPage(i+1)}>
      <img src={`https://starwars-visualguide.com/assets/img/characters/${i+1}.jpg`}
@@ -45,11 +50,13 @@ const navigate = useNavigate ()
    
     <Fundo>
         <CardHeader>
-          <h3>Star Wars</h3> 
-       </CardHeader>
+          <h1>Star Wars</h1> 
+          <h4>Que a força esteja com você.</h4>
+        </CardHeader>
 
       <CardList>
        {listPeople} 
+       <button onClick={goToDetailPlanet}>Conheça os planetas</button>
       </CardList>  
        
    
