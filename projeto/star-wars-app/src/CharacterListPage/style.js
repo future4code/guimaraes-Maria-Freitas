@@ -2,7 +2,6 @@ import styled from "styled-components";
 import fundo from '../assets/../img/img.jpg'
 
 
-
 export const Fundo = styled.div `
   background-image: url(${fundo});
   width: 100%;
@@ -15,7 +14,7 @@ display: flex;
 justify-content: center;
 
 
-h1{
+h3{
   text-shadow:  0 4px #EEC900;
   color:white;
   font-size: 60px;
@@ -34,9 +33,9 @@ h4{
 export const CardList =styled.div `
 display: flex;
 flex-wrap: wrap;
+padding: 10px;
 color: white;
 justify-content: center;
-
 
 
 p{
