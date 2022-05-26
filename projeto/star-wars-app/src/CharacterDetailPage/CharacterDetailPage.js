@@ -8,18 +8,16 @@ import {Container,Imagem} from "./style"
 
 const CharacterDetailPage= () => {
 
-const [details, setDetails] = useState([]) 
-const navigate = useNavigate()
+const [details, setDetails] = useState ([]) 
+const [planet, setPlanet] = useState ()
+const navigate = useNavigate ()
 const params = useParams()
-const [planet, setPlanet] = useState([])
 
 useEffect (() => {
   getDetail()
- 
-
+  getPlanet()
 
 }, [])
-
 
 const getDetail= () => {
  axios.get(`${BASE_URL}/people/${params.i}`)
