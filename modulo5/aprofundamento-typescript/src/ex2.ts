@@ -1,3 +1,9 @@
+// Resposta: As entradas são números (parâmetros).
+//E a saída é o retorno que cospe estatística.
+// na função faz toda a lógica.
+
+
+
 // function obterEstatisticas(numeros:number) {
 
 //     const numerosOrdenados = numeros.sort(
