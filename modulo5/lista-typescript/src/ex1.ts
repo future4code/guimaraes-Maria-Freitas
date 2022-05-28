@@ -1,8 +1,9 @@
-const dadosPessoais =(nome:string ,data:string)=> {
- const dados:string= "Maria nasci na data 20061988"
-//  const resultado:string=dados.split(".")
- return dados.split(".")
+const register = (name:string, date:string):string => {
+    const splitDate:string[] = date.split("/")
+    const day:string = splitDate[0]
+    const month:string = splitDate[1]
+    const year:string = splitDate[2]
+    return `Olá me chamo ${name}, nasci no dia ${day} do mês ${month} do ano de ${year}.`
 }
-console.log(dadosPessoais)
 
-// "Olá me chamo {NOME}, nasci no dia {DIA} do mês de {MÊS} do ano de {ANO}" 
+console.log(register("Maria","20/06/1998"))
