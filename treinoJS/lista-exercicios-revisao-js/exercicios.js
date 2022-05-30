@@ -5,8 +5,12 @@ return array.reverse()
 
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
+const pares=retornaNumerosPares(array)
+const elevados =pares.map((n)=> {
+ return n ** 2
 
-return array 
+})
+return elevados
 }
 
 // EXERCÍCIO 03
@@ -19,20 +23,20 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 04
 function retornaMaiorNumero(array) {
-  const maior= array.filter((n)=> {
-    return n < 0
-  })
- return maior;
+  // const maior= numeroMaior(array);
+  // const ultimo= maior.length -1;
+  // return maior[ultimo]
+
 }
 
 // EXERCÍCIO 05
 function retornaQuantidadeElementos(array) {
-  return array.length ()
+  return array.length
 }
 
 // EXERCÍCIO 06
 function retornaExpressoesBooleanas() {
-
+ return array.includes()
 }
 
 // EXERCÍCIO 07
@@ -59,8 +63,14 @@ function comparaDoisNumeros(num1, num2) {
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
+const arrayNumero= retornaArray(array)
+const maior= arrayNumero[arrayNumero.length - 2]
+const menor=arrayNumero[1]
+return[maior, menor];
 
 }
+
+
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
@@ -89,7 +99,11 @@ function anonimizaPessoa(pessoa) {
 
 // EXERCÍCIO 16A
 function maioresDe18(arrayDePessoas) {
-
+   if(arrayDePessoas > 18){
+   console.log (`Você é maior de ${maioresDe18}`)
+  }else {
+     console.log("Você não é maior de 18")
+   }
 }
 
 // EXERCÍCIO 16B
