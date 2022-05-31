@@ -8,11 +8,11 @@ width: 100%;
 height: 100vh;
 
 h1{
-  text-shadow:  0 4px #EEC900;
-  color:white;
-  font-size: 60px;
+  text-shadow: 0 0 20px #FFFF00;
+  color:#E8E8E8;
+  font-size: 120px;
   padding: 50px;
- 
+  
 
 }
 

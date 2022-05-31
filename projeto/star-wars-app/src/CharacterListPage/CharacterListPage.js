@@ -52,11 +52,11 @@ const navigate = useNavigate ()
         <CardHeader>
           <h1>Star Wars</h1> 
           <h4>Que a força esteja com você.</h4>
+          <button onClick={goToDetailPlanet}>PLANETAS</button>
         </CardHeader>
 
       <CardList>
        {listPeople} 
-       <button onClick={goToDetailPlanet}>Conheça os planetas</button>
       </CardList>  
        
    
