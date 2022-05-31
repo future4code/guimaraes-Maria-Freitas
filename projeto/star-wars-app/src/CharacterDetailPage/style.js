@@ -7,18 +7,14 @@ color: white;
 background-image: url(${fundo});
 width: 100%;
 height: 100vh;
+display: flex;
 
 
 `
 export const Imagem =styled.div`
-display: flex;
-/* width: 40px; */
-height:100px;
-left:40px;
+margin-top: 40px;
 
 `
-
-
 export const ContainerDetails = styled.div`
 flex-direction: column;
 justify-self: center;
@@ -26,24 +22,25 @@ height: 657px;
 
 
 button{
-width: 80px;
+width: 70px;
 border-radius: 10px;
 border:white;
-padding: 10px;
+padding: 5px;
+margin:5px;
 
 
 }
 
 p{
   margin: 35px;
-  font-size: 20px;
+  font-size: 30px;
  
 }
 
 h1{
   text-shadow: 0 0 20px #FFFF00;
   color:#E8E8E8;
-  font-size: 70px;
+  font-size: 50px;
   padding: 50px;
   
 }
