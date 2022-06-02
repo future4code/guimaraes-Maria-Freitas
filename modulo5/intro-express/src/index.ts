@@ -19,6 +19,14 @@ app.get('/', (req:Request , res:Response)=>{
 
 
 
+app.post('/users/',(req:Request , res:Response) =>{
+if(req.body.id)=== ""){
+
+    
+}
+
+})
+
 app.listen(3003 ,()=>{
     console.log("servidor de pé")
 
