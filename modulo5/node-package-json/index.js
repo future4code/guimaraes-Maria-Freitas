@@ -26,8 +26,12 @@
 
 //Exercício 3
 
-const tarefa= process.argv[2]
-const listaTarefa= process.argv[3]
+// const tarefa= process.argv[2]
+// const listaTarefa= process.argv[3]
 
-console.log(`A tarefa à se fazer é ${tarefa}`);
-console.log(`A tarefa à se fazer é ${tarefa} e ${listaTarefa}`)
+// console.log(`A tarefa à se fazer é ${tarefa}`);
+// console.log(`A tarefa à se fazer é ${tarefa} e ${listaTarefa}`)
+
+// colocar cada exercício em uma pasta
+// colocar a saída no console.log colorida 
+//npm i colors

@@ -7,7 +7,8 @@
   },
   "author": "Maria Freitas",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
 }
-
-
