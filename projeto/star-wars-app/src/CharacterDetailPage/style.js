@@ -14,11 +14,12 @@ display: flex;
 export const Imagem =styled.div`
 margin-top: 40px;
 
+
 `
 export const ContainerDetails = styled.div`
 flex-direction: column;
 justify-self: center;
-height: 657px;
+
 
 
 button{
@@ -34,7 +35,8 @@ margin:5px;
 p{
   margin: 35px;
   font-size: 30px;
- 
+
+   
 }
 
 h1{
