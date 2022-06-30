@@ -1,10 +1,7 @@
-// console.log("Vai Maria!")
-
-
-
 import express from "express";
 import cors from "cors";
 import { Request, Response } from "express";
+import { usuario,usuarios } from "./data";
 
 const app = express()
 app.use(express.json())
@@ -17,15 +14,21 @@ app.get('/', (req:Request , res:Response)=>{
 })
 
 
+app.get('/usuarios',(req:Request , res:Response)=>{
+try {
 
+    const listaUsuarios = usuarios
+   res.status(200).send(listaUsuarios)
 
-app.post('/users/',(req:Request , res:Response) =>{
-if(req.body.id)=== ""){
-
-    
+  
+} catch (error) {
+ res.status(400).end("Usuários não encontrados")
 }
 
+
 })
+
+
 
 app.listen(3003 ,()=>{
     console.log("servidor de pé")
