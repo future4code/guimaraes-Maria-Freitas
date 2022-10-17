@@ -13,6 +13,6 @@ export const AppCointainer = styled.div`
     width: 20%;
   }
   h1 {
-    color: #000000;
+    color: #FF0000;
   }
 `;

@@ -6,7 +6,9 @@
   "cards": [
     {
       "name": "O MAGO",
-      "image": "arcano1.jpg"
+      "image": "arcano1.jpg",
+      "description":"Se abra para algo novo. Aproveite o momento agora para iniciar novos projetos."
+      
     },
     {
       "name": "A SACERDOTISA",

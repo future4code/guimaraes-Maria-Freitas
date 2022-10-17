@@ -8,6 +8,7 @@ const Cards = (props) => {
         alt={props.cardName}
         name={props.cardImage}
         onClick={props.onClick}
+        descricao={props.descricao}
       />
     </Card>
   );

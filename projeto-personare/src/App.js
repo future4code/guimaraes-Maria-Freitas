@@ -7,6 +7,7 @@ export default function App() {
   const data = useRequestData("tarot.json");
   // console.log(data);
 
+  
 
   const changImage = (event) => {
     // console.log(event.target);
@@ -18,7 +19,9 @@ export default function App() {
   };
 
   return (
+    
     <AppCointainer>
+     
       <img
         src={
           "https://d168rbuicf8uyi.cloudfront.net/wp-content/uploads/2018/05/07094247/imagemmarcavertical.jpg"
@@ -37,6 +40,7 @@ export default function App() {
                 backCard={data.imageBackCard}
                 cardImage={card.image}
                 onClick={changImage}
+                // descricao={card.description}
               />
             );
           })}
